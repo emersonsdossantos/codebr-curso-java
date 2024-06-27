@@ -1,4 +1,4 @@
-package exercicios;
+package controle.exercicios;
 
 public class Exercicio01 {
 
