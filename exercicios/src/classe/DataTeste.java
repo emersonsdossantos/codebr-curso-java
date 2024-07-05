@@ -5,20 +5,16 @@ public class DataTeste {
 	public static void main(String[] args) {
 		
 		Data data1 = new Data();
-		data1.dia = 30;
-		data1.mes = 5;
-		data1.ano = 2016;
+				
+		Data data2 = new Data(28,9,1984);
 		
+		String dataFormatada1 = data1.formatarData();
 		
-		Data data2 = new Data();
-		data2.dia = 28;
-		data2.mes = 9;
-		data2.ano = 1984;
-		
-		System.out.println(data1.formatarData());
+		System.out.println(dataFormatada1);
 		System.out.println(data2.formatarData());
-
-
+		
+		data1.imprimirDataFormatada();
+		data2.imprimirDataFormatada();
 	}
 
 }
