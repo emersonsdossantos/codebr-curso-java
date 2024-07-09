@@ -25,13 +25,13 @@ public class ValorVsReferencia {
 		alterValorPrimitivo(c);
 		System.out.println(c);
 		
-		System.out.println(d1.formatarData());
-		System.out.println(d2.formatarData());
+		System.out.println(d1.obterDataFormatada());
+		System.out.println(d2.obterDataFormatada());
 		
 		voltarDataParaValorPadrao(d1);
 		
-		System.out.println(d1.formatarData());
-		System.out.println(d2.formatarData());
+		System.out.println(d1.obterDataFormatada());
+		System.out.println(d2.obterDataFormatada());
 	}
 	
 	static void voltarDataParaValorPadrao(Data d) {

@@ -7,9 +7,10 @@ public class Data {
 	int ano;
 	
 	Data(){
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+//		dia = 1;
+//		mes = 1;
+//		ano = 1970;
+		this(1, 1, 1970); // chama outro construtor a apartir de um construtor
 	}
 	
 	Data(int dia, int mes, int ano){
@@ -18,11 +19,11 @@ public class Data {
 		this.ano = ano;
 	}
 	
-	String formatarData() {
-		return String.format("%d/%d/%d", dia, mes, ano);
+	String obterDataFormatada() {
+		return String.format("%d/%d/%d", this.dia, mes, ano);
 	}
 	
 	void imprimirDataFormatada(){
-		System.out.println(formatarData());
+		System.out.println(this.obterDataFormatada());
 	}
 }

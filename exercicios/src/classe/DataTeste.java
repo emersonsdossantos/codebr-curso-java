@@ -8,10 +8,10 @@ public class DataTeste {
 				
 		Data data2 = new Data(28,9,1984);
 		
-		String dataFormatada1 = data1.formatarData();
+		String dataFormatada1 = data1.obterDataFormatada();
 		
 		System.out.println(dataFormatada1);
-		System.out.println(data2.formatarData());
+		System.out.println(data2.obterDataFormatada());
 		
 		data1.imprimirDataFormatada();
 		data2.imprimirDataFormatada();
