@@ -5,7 +5,18 @@ public class Pessoa {
 	String nome;
 	double peso;
 	
+	Pessoa(String nome, double peso){
+		this.nome = nome;
+		this.peso = peso;
+	}
+	
 	void comer(Comida comida) {
-		this.peso += comida.pesoComida;
+		if (comida != null) {
+			this.peso += comida.pesoComida;
+		}		
+	}
+	
+	String apresentar() {
+		return "Oi eu sou o " + nome + " e tenho " + peso + " Kg";
 	}
 }
