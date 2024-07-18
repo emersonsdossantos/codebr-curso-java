@@ -31,6 +31,9 @@ public class CarroTeste {
 		c1.frear();
 		
 		System.out.println(c1.motor.giros());
+		
+		// Relação bidirecional
+		System.out.println(c1.motor.carro.motor.carro.motor.giros());
 	}
 
 }
