@@ -2,8 +2,9 @@ package oo.heranca.desafio;
 
 public class Ferrari extends Carro{
 	
+	@Override
 	void acelerar() {
-		this.velocidade = velocidade + 15;
+		velocidade += 15;
 	}
 
 }
