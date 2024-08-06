@@ -1,0 +1,86 @@
+Anotacoes do curso de java
+
+Classes e Metodos
+
+Uma classe é composta por atributos e comportamentos
+	
+Atributos:
+	dados
+
+Comportamentos:
+	métodos
+
+Uma classe define o tipo, o tipo é uma estrutura de dados
+
+A classe representa uma abstracao
+
+Objeto == Instancia
+
+usando o static a variavel / constante e Objeto, irá pertencer a classe
+
+Uma classe define o tipo
+
+Quando o metodo usa o mesmo atributo da classe, nao precisa colocar nos parametros, pois ele ja tem acesso direto
+
+Uma classe possui um construtor padrao sem parametros.
+ O construtor padrao possuiu o mesmo nome da classe.
+
+Caso seja criado um construtor explicitamente com parametros, o construtor padrao deixa de existir.
+
+O retorno do construtor é o do tipo da classe. Ele NAO tem retorno, caso seja colocado um retorno ele deixa de ser um contrutor e vira um metodo.
+
+quando declarado algo como STATIC, irá pertencer a Classe.
+
+quando alterar o valor de uma variavel static da classe o ideal é que seja explicito
+
+Atribuicao por valor = Primitivos
+Atribuicao por referencia = Objetos
+
+Um membro static consegue acessar outro membro static
+Para acessar um atributo de instacia é necessario criar uma nova instancia e acessar pela anotacao ponto
+
+Variaveis de classe ou de instancia sao iniciadas com os valores padrao
+
+Uma variavel local dentro de um construtor ou metodo não sao iniciadas com os valores padrao, é necessario iniciar explicitamente 
+
+o array possui tamanho fixo
+
+
+Colletions
+
+Generics, vai ajudar a amarrar, associar um tipo da colecao.
+
+Final: sempre irá apontar para o mesmo endereco de memoria
+
+toString: converter um objeto em String
+
+Os quatro pilares da orientacao objeto
+O Objeto agrupa os atributos e comportamentos
+
+Encapsulamento 
+Modificar de acesso - nivel de visibilidade
+Um atributo privado (private) só pode ser acessado dentro da propria classe
+Public: pode ser acessado de qualquer classe
+Package (Default): pode ser acessado dentro do mesmo pacote e classe
+Protected: pode ser acessado pela propria classe, pacote e transmitido por herança
+
+Herança: Herda comportamentos
+Dica:
+Composição: ... tem um (a)...
+	- carro tem um motor
+	- carro tem portas
+	- casa tem uma cozinha
+
+Herança: ... é um (a)...
+	- civic é um carro
+	- gato é um animal
+	- maçã é uma fruta
+
+No java, uma classe só pode herdar de uma classe
+
+
+Polimorfismo
+
+
+Abstração
+Simplificação do mundo real para o software
