@@ -27,6 +27,8 @@ public class CarroTeste {
 		ferrari.ligarAr();
 		ferrari.desligarAr();
 		
+		System.out.println("Velocidade do ar: " + ferrari.velocidadeDoAr());
+		
 		ferrari.acelerar();
 		ferrari.frear();
 		System.out.println(ferrari);
