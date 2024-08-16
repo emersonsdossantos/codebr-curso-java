@@ -84,3 +84,6 @@ Polimorfismo
 
 Abstração
 Simplificação do mundo real para o software
+
+@FunctionInterface
+Essa anotação significa que uma interface funcional permite apenas um método
