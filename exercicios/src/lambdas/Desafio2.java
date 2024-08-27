@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-public interface Desafio2 {
+public class Desafio2 {
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
