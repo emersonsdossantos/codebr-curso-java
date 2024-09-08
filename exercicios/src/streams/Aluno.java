@@ -6,8 +6,12 @@ public class Aluno {
 	final Double nota;
 	final boolean bomComportamento;
 	
-	public Aluno(String aluno, Double nota, boolean bomcomportamento) {
-		this.nome = aluno;
+	public Aluno(String nome, Double nota) {
+		this(nome, nota, true);
+	}
+	
+	public Aluno(String nome, Double nota, boolean bomcomportamento) {
+		this.nome = nome;
 		this.nota = nota;
 		this.bomComportamento = bomcomportamento;
 	}
