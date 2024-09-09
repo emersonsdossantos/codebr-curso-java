@@ -6,7 +6,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class Reduce3 {
+public class Reduce2 {
 
 	public static void main(String[] args) {
 		
