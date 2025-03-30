@@ -59,8 +59,8 @@ public class Campo {
 			if(vizinhacaSegura()) {
 				vizinhos.forEach(v -> v.abrir());
 			}
-			
 			return true;
+			
 		} else {
 			return false;			
 		}
@@ -68,6 +68,22 @@ public class Campo {
 	
 	boolean vizinhacaSegura() {
 		return vizinhos.stream().noneMatch(v -> v.minado);
+	}
+	
+	void minar() {
+		minado = true;
+	}
+	
+	public boolean isMarcado() {
+		return marcado;
+	}
+	
+	public boolean isAberto() {
+		return aberto;
+	}
+	
+	public boolean isFechado() {
+		return !isAberto();
 	}
 	
 }
