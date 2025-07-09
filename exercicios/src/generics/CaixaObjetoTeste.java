@@ -14,7 +14,7 @@ public class CaixaObjetoTeste {
 		CaixaObjeto caixaB = new CaixaObjeto();
 		caixaB.guardar("ola");
 		
-		String coisaB = (String) caixaA.abrir();
+		String coisaB = (String) caixaB.abrir();
 		
 		System.out.println(coisaB);
 
