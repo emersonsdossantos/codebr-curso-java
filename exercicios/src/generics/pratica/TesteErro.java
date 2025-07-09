@@ -1,0 +1,17 @@
+package generics.pratica;
+
+public class TesteErro {
+
+	public static void main(String[] args) {
+		
+        Pessoa maria = new Pessoa("Maria");
+
+        Caixa<Pessoa> caixa;
+
+        caixa = maria; // Erro aqui
+
+        System.out.println(caixa.pegar().toString());
+    }
+
+
+}
