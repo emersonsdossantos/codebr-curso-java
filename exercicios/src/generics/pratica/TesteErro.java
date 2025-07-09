@@ -6,9 +6,9 @@ public class TesteErro {
 		
         Pessoa maria = new Pessoa("Maria");
 
-        Caixa<Pessoa> caixa;
+        Caixa<Pessoa> caixa = new Caixa<>();
 
-        caixa = maria; // Erro aqui
+        caixa.guardar(maria); 
 
         System.out.println(caixa.pegar().toString());
     }
