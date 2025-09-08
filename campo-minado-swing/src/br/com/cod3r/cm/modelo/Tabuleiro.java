@@ -91,8 +91,6 @@ public class Tabuleiro implements CampoObservador{
 		sortearMinas();
 	}
 	
-	
-
 	public int getLinhas() {
 		return linhas;
 	}

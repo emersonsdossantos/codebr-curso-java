@@ -31,7 +31,7 @@ public class Campo {
 	
 	boolean adicionarVizinho(Campo vizinho) {
 		boolean linhaDiferente = linha != vizinho.linha;
-		boolean colunaDiferente = linha != vizinho.coluna;
+		boolean colunaDiferente = coluna != vizinho.coluna;
 		boolean diagonal = linhaDiferente && colunaDiferente;
 		
 		int deltaLinha = Math.abs(linha - vizinho.linha);
@@ -136,5 +136,6 @@ public class Campo {
 		aberto = false;
 		minado = false;
 		marcado = false;
+		notificarObservadores(CampoEvento.REINICIAR);
 	}
 }
