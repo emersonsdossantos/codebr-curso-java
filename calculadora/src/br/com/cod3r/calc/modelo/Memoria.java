@@ -5,6 +5,10 @@ import java.util.List;
 
 public class Memoria {
 	
+	private enum TipoComando {
+		ZERAR, NUMERO, DIV, MULT, SUB, SOMA, IGUAL, VIRGULA;
+	};
+	
 	private static final Memoria instancia = new Memoria();
 	
 	private String textoAtual = "";
@@ -27,14 +31,48 @@ public class Memoria {
 		return textoAtual.isEmpty() ? "0" : textoAtual;
 	}
 	
-	public void processarComando(String valor) {
+	public void processarComando(String texto) {
 		
-		if("AC".equals(valor)) {
+		TipoComando tipoComando = detectarComando(texto);
+		System.out.println(tipoComando);
+		
+		if("AC".equals(texto)) {
 			textoAtual = "";
 		} else {
-			textoAtual += valor;
+			textoAtual += texto;
 		}
 		
 		observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
+	}
+
+	private TipoComando detectarComando(String texto) {
+		
+		if(textoAtual.isEmpty() & texto == "0") {
+			return null;
+		}
+		
+		try {
+			Integer.parseInt(texto);
+			return TipoComando.NUMERO;
+		} catch (NumberFormatException e) {
+			// Quando nao for numero...
+			if("AC".equals(texto)) {
+				return TipoComando.ZERAR;
+			} else if("/".equals(texto)){
+				return TipoComando.DIV;
+			}else if("x".equalsIgnoreCase(texto)){
+				return TipoComando.MULT;
+			}else if("-".equals(texto)){
+				return TipoComando.SUB;
+			}else if("+".equals(texto)){
+				return TipoComando.SOMA;
+			}else if("=".equals(texto)){
+				return TipoComando.IGUAL;
+			}else if(",".equals(texto)){
+				return TipoComando.VIRGULA;
+			}
+		}
+		
+		return null;
 	}
 }
