@@ -17,3 +17,6 @@ create table if not exists cidades(
 -- );
 
 drop table if exists teste;
+
+alter table cidades
+modify column area decimal(10,2);
