@@ -10,7 +10,7 @@ public class TesteConexao {
 		
 		final String url = "jdbc:mysql://localhost";
 		final String usuario = "root";
-		final String senha = "minho202809";
+		final String senha = "conexaosql";
 		
 		Connection conexao = DriverManager.getConnection(url, usuario, senha);
 		

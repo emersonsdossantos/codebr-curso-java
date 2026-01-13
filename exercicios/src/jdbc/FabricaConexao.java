@@ -10,7 +10,7 @@ public class FabricaConexao {
 		try {
 			final String url = "jdbc:mysql://localhost/curso_java";
 			final String usuario = "root";
-			final String senha = "minho202809";
+			final String senha = "conexaosql";
 			
 			return DriverManager.getConnection(url, usuario, senha);
 		} catch (SQLException e) {
